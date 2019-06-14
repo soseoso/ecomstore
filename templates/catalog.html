@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %} <!-- key things -->
 
 {% block site_wrapper %}
 <div id="main">
@@ -8,7 +8,24 @@
             <!-- link to cart -->
             Modern Musician
         </div>
-
     </div>
-
+    <div id="middle">
+        <div id="sidebar">
+            <div class="sidebarIEPadder">
+                <!-- search box here -->
+                <!-- category listing here -->
+            </div>
+        </div>
+        <div id="content">
+            <a name="content"></a>
+            <div class="contentIEPadder">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerIEPadder">
+            <!-- footer here -->
+        </div>
+    </div>
 </div>
